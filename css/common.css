@@ -1,0 +1,350 @@
+/* 样式重置 */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+input {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: #a9a9a9;
+    /* placeholder字体大小  */
+    font-size: 14px;
+    /* placeholder位置  */
+    text-align: left;
+}
+
+.border-1px {
+    position: relative;
+}
+
+.border-1px::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    content: '';
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-device-pixel-ratio:1.5) {
+    .border-1px::after {
+        -webkit-transform: scaleY(0.7);
+        transform: scaleY(0.7)
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-device-pixel-ratio: 2) {
+    .border-1px::after {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5)
+    }
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* custom */
+
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* 公共样式 */
+
+body {
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav-bar-top {
+    position: relative;
+    display: flex;
+    padding: 0 22px;
+    height: 50px;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-bar-top .nav-back-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 22px;
+    top: 0;
+}
+
+.content-wrap {
+    padding-top: 50px;
+}
+
+.user-detail {
+    display: flex;
+    align-items: center;
+    height: 1.78rem;
+    background-image: url('../images/user-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0.5rem;
+    font-size: 16px;
+}
+
+.user-detail .head-img {
+    height: 1.04rem;
+    width: 1.04rem;
+    background-color: #d57800;
+    border-radius: 50%;
+}
+
+.user-detail .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.25rem;
+    text-align: left;
+}
+
+.user-name {
+    margin-bottom: 0.19rem;
+}
+
+.form-input-wrap {
+    padding: 0.27rem 0.47rem;
+}
+
+.input-item-wrap {
+    position: relative;
+    height: 0.87rem;
+}
+
+.input-item-wrap input {
+    padding-left: 0.74rem;
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.51rem;
+}
+
+.submit-btn {
+    width: 4.43rem;
+    height: 0.55rem;
+    background-color: #ff890b;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+/* 图标字体 */
+
+.icon-cardNum {
+    position: absolute;
+    left: 0.07rem;
+    bottom: 0.25rem;
+    width: 0.46rem;
+    height: 0.32rem;
+    background-image: url('../images/card-num.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-verCode {
+    position: absolute;
+    left: 0.07rem;
+    bottom: 0.25rem;
+    width: 0.4rem;
+    height: 0.45rem;
+    background-image: url('../images/ver-code.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
