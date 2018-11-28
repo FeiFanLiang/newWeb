@@ -265,6 +265,86 @@ body {
     padding-top: 50px;
 }
 
+.form-container {
+    padding: 0 0.4rem;
+    color: #3c3c3c;
+    font-size: 15px;
+}
+
+.form-container .form-title {
+    display: flex;
+    height: 0.82rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.radio-item-larger {
+    position: relative;
+    display: flex;
+    height: 0.65rem;
+    padding: 0 0.1rem;
+}
+
+.radio-item-larger input[type="radio"] {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+
+.radio-item-larger input[type="radio"]+label {
+    position: absolute;
+    left: 0.01rem;
+    top: 0.32rem;
+    margin-top: -0.15rem;
+    width: 0.31rem;
+    height: 0.31rem;
+    border-radius: 50%;
+    border: 1px solid #a9a9a9;
+}
+
+.radio-item-larger input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 0.09rem;
+    height: 0.15rem;
+    top: 0.04rem;
+    left: 0.07rem;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg)
+}
+
+.radio-item-larger input:checked+label {
+    background-color: #f9a02d;
+    border: 1px solid #f9a02d;
+}
+
+.radio-item-vert {
+    position: relative;
+    height: 0.9rem;
+}
+
+.form-wrap {
+    padding: 0.2rem 0;
+}
+
+.form-wrap .radio-detail {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-item-select {
+    position: relative;
+    width: 0.6rem;
+}
+
+.radio-detail {
+    height: 100%;
+}
+
 .user-detail {
     display: flex;
     align-items: center;
@@ -303,28 +383,34 @@ body {
     position: relative;
     height: 0.87rem;
 }
-.input-item-wrap .input-btn {
-	position: absolute;
-	right: 0;
-	top: 0;
-	display: flex;
-	align-items: center;
-	width: 1.8rem;
-	height: 100%;
-	color: #ff890b;
-	font-size: 14px;
+
+.input-item-wrap .input-btn,
+.radio-item-vert .input-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 1.8rem;
+    height: 100%;
+    color: #ff890b;
+    font-size: 14px;
 }
-.input-btn-text{
-	display: flex;
-	height: 0.45rem;
-	align-items: center;
-	justify-content: center;
-	padding-left:0.28rem;
-	border-left: 1px solid #ddd;
+
+.input-btn-text {
+    display: flex;
+    height: 0.45rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.28rem;
+    border-left: 1px solid #ddd;
+    color: #ff890b;
 }
-.input-item-wrap input {
+
+.input-item-wrap input,
+.radio-item-vert input {
     padding-left: 0.74rem;
-    color: #a9a9a9;
+    color: #000;
     font-size: 14px;
 }
 
@@ -344,6 +430,21 @@ body {
 
 
 /* 图标字体 */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('./iconFont/iconfont.eoticonfont.eot');
+    src: url('./iconFont/iconfont.eot?#iefix') format('embedded-opentype'), url('./iconFont/iconfont.woff') format('woff'), url('./iconFont/iconfont.ttf') format('truetype'), url('./iconFont/iconfont.svg#iconfont') format('svg');
+}
+
+.icon-back {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-cardNum {
     position: absolute;
