@@ -277,7 +277,18 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
-
+.form-title-wrap{
+	display: flex;
+	height: 1.12rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.formIn-title{
+	display: flex;
+	height: 0.9rem;
+	justify-content: flex-start;
+	align-items: center;
+}
 .radio-item-larger {
     position: relative;
     display: flex;
@@ -308,7 +319,7 @@ body {
     width: 0.09rem;
     height: 0.15rem;
     top: 0.04rem;
-    left: 0.07rem;
+    left: 0.08rem;
     border: 2px solid #fff;
     border-top: none;
     border-left: none;

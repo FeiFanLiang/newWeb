@@ -8,6 +8,7 @@
     <title>设定主卡</title>
     <link rel="stylesheet" href="../css/common.css">
     <script src="../js/rem.js"></script>
+		<script src="../js/zepto.min.js"></script>
 </head>
 
 <body>
@@ -48,8 +49,8 @@
                     </div>
                     <div class="radio-item-larger">
                         <div class="radio-item-select">
-                            <input type="radio" id="card_selec1" name="card-selec">
-                            <label for="card_selec1"></label>
+                            <input type="radio" id="card_selec2" name="card-selec">
+                            <label for="card_selec2"></label>
                         </div>
 
                         <div class="radio-detail">
@@ -62,8 +63,8 @@
                     </div>
                     <div class="radio-item-larger">
                         <div class="radio-item-select">
-                            <input type="radio" id="card_selec1" name="card-selec">
-                            <label for="card_selec1"></label>
+                            <input type="radio" id="card_selec3" name="card-selec">
+                            <label for="card_selec3"></label>
                         </div>
 
                         <div class="radio-detail">
@@ -91,5 +92,20 @@
         </div>
     </section>
 </body>
-
+<script>
+	var btn = document.querySelector('.submit-btn')
+	btn.onclick = function(e){
+		e.preventDefault();
+		window.location.href = './card-recharge.html'
+	}
+	console.log($('.radio-detail'))
+	$('.radio-detail').on('tap',function(){
+		console.log('1')
+		console.log($(this).prev().find('input[type="radio"]'))
+		$(this).prev().find('input[type="radio"]').checked = true
+	})
+	$('.radio-detail').tap(function (params) {
+		console.log($(this).prev().find('input[type="radio"]'))
+	})
+</script>
 </html>

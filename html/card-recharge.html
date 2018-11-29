@@ -2,17 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>线上充值</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <!-- <link rel="stylesheet" href="../css/card-setting.css"> -->
-    <script src="../js/rem.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>线上充值</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<!-- <link rel="stylesheet" href="../css/card-setting.css"> -->
+	<script src="../js/rem.js"></script>
+	<style>
+		#card1{
+			height: 20px;
+			width: 20px;
+			/* opacity: 0; */
+		}
+		#card1::after{
+			display: inline-block;
+			content: '';
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			border: 1px solid #000;
+			/* background-color: #000; */
+		}
+	</style>
 </head>
 
 <body>
-
+	<header class="nav-bar-top fixed-navbar">
+		<div class="nav-back-btn">
+			<i class="icon-back">&#xf0343;</i>返回
+		</div>
+		<div>线上充值</div>
+	</header>
+	<section class="content-wrap">
+		<div class="user-detail">
+			<div class="head-img">
+				<i class="icon-head"></i>
+			</div>
+			<div class="user-info">
+				<span class="user-name">张海涛</span>
+				<span>186****1976</span>
+			</div>
+		</div>
+		<div class="form-container">
+			<div class="form-title-wrap border-1px">
+				<span class="title">充值卡号</span>
+				<span>100001</span>
+				<span>金卡</span>
+			</div>
+			<form action="">
+				<div class="formIn-title">
+					充值选择
+				</div>
+				<div class="form-radio-item">
+					<input type="radio" name="card-selec" id="card1">
+					<label for="card1">
+						<div>
+							充值10000(赠送3000)
+						</div>
+					</label>
+				</div>
+			</form>
+		</div>
+	</section>
 </body>
 
 </html>
