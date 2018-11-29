@@ -86,7 +86,7 @@ input {
     border: 0;
     font-size: 100%;
     font-weight: normal;
-    vertical-align: baseline;
+    vertical-align: middle;
 }
 
 input {
@@ -108,7 +108,7 @@ input::-webkit-input-placeholder {
     /* placeholder颜色  */
     color: #a9a9a9;
     /* placeholder字体大小  */
-    font-size: 14px;
+    font-size: 15px;
     /* placeholder位置  */
     text-align: left;
 }
@@ -233,6 +233,11 @@ body {
     font-size: 16px;
 }
 
+label,
+input {
+    vertical-align: middle;
+}
+
 .nav-bar-top {
     position: relative;
     display: flex;
@@ -277,18 +282,34 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
-.form-title-wrap{
-	display: flex;
-	height: 1.12rem;
-	justify-content: space-between;
-	align-items: center;
+
+.form-title-wrap {
+    display: flex;
+    height: 1.12rem;
+    justify-content: space-between;
+    align-items: center;
 }
-.formIn-title{
-	display: flex;
-	height: 0.9rem;
-	justify-content: flex-start;
-	align-items: center;
+
+.form-radio-wrap {
+    padding-bottom: 1px;
 }
+
+.formIn-title {
+    display: flex;
+    height: 0.9rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.radio-checked {
+    display: flex;
+    height: 0.9rem;
+    padding: 0 0.4rem 0 0.18rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .radio-item-larger {
     position: relative;
     display: flex;
@@ -296,10 +317,50 @@ body {
     padding: 0 0.1rem;
 }
 
-.radio-item-larger input[type="radio"] {
+.radio-item-larger input[type="radio"],
+.form-radio-item input[type="radio"] {
     height: 1px;
     width: 1px;
     opacity: 0;
+}
+
+.form-radio-item {
+    position: relative;
+    display: flex;
+    height: 0.5rem;
+    align-items: center;
+    padding-left: 0.55rem;
+    font-size: 16px;
+    margin-bottom: 0.4rem;
+}
+
+.form-radio-item input[type="radio"]+label {
+    position: absolute;
+    left: 0.01rem;
+    top: 0.24rem;
+    margin-top: -0.16rem;
+    width: 0.31rem;
+    height: 0.31rem;
+    border-radius: 50%;
+    border: 1px solid #a9a9a9;
+}
+
+.form-radio-item input:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 0.09rem;
+    height: 0.15rem;
+    top: 0.04rem;
+    left: 0.08rem;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg)
+}
+
+.form-radio-item input:checked+label {
+    background-color: #f9a02d;
+    border: 1px solid #f9a02d;
 }
 
 .radio-item-larger input[type="radio"]+label {
