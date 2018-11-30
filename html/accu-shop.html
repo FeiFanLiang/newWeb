@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>积分商城</title>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/accu-shop.css">
+        <script src="../js/rem.js"></script>
+    </head>
+
+    <body>
+        <header class="nav-bar-top fixed-navbar">
+            <div class="nav-back-btn">
+                <i class="icon-back">&#xf0343;</i>返回
+            </div>
+            <div>积分商城</div>
+        </header>
+        <section class="content-wrap shop-content">
+            <div class="shop-title">
+                <div class="current-card">
+                    主卡 : <span class="current-num">100001</span>
+                </div>
+                <div class="current-accu">
+                    当前可用积分 : <span class="current-num">2000</span>
+                </div>
+            </div>
+            <div class="com-container">
+                <div class="com-show">
+                    <div class="com-img">
+                        <div class="com-detail">
+                            <div class="com-price">
+                                <span class="com-curr">¥</span>
+                                <span class="price-num">30</span>
+                            </div>
+                            <div class="com-text">
+                                <span class="com-name">
+                                    足疗券
+                                </span>
+                                <span class="com-remark">
+                                    限定分店 : 金佰瀚
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com-buy">
+                        <div class="buy-left">
+                            <div class="buy-title">
+                                金佰瀚30元足疗代金券
+                            </div>
+                            <div class="buy-detail">
+                                兑换规则 : <span class="buy-rule">100分+1元</span>
+                            </div>
+                        </div>
+                        <div class="buy-right">
+                            兑换数量 :
+                            <div class="buy-count-btn">
+                                <i class="icon-sub">-</i>
+                                <span class="buy-count">2</span>
+                                <i class="icon-add">+</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-detail">
+                <div class="text-title border-1px">商品详情</div>
+                <div class="text-des">XXXXX</div>
+            </div>
+        </section>
+        <footer class="bottom-fixed">
+            <div class="bottom-nav-bar">
+                <div class="bar-left">
+                    实际支付&nbsp;:&nbsp;<span class="confirm-price"> 200分+2元</span>
+                </div>
+                <div class="bar-right">确认兑换</div>
+            </div>
+        </footer>
+    </body>
+    <script>
+        var btn = document.querySelector('.bar-right')
+        btn.onclick = function(params) {
+            window.location.href = './my-cardBag.html'
+        }
+    </script>
+
+</html>

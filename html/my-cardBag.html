@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>我的会员卡</title>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/my-cardBag.css">
+        <script src="../js/rem.js"></script>
+    </head>
+
+    <body>
+        <header class="nav-bar-top fixed-navbar">
+            <div class="nav-back-btn">
+                <i class="icon-back">&#xf0343;</i>返回
+            </div>
+            <div>我的会员卡</div>
+        </header>
+        <section class="content-wrap user-bag">
+            <div class="bag-user-info">
+                <div class="bag-img">
+                    <div class="bag-user">
+                        客户姓名: <span class="bag-user-name">张海涛</span>
+                    </div>
+                    <div class="main-card">
+                        主卡类型: 金卡
+                    </div>
+                    <div class="main-card-num">
+                        主卡卡号: 100001
+                    </div>
+                </div>
+            </div>
+            <div class="bag-list-container">
+                <div class="bag-border"></div>
+                <div class="bag-list-title border-1px">
+                    <i class="icon-bag"></i>
+                    <div class="bag-title">已绑卡片</div>
+                </div>
+                <div class="bag-list-item border-1px">
+                    <span>100001</span>
+                    <span>金卡</span>
+                    <span>余额 : 2000</span>
+                </div>
+                <div class="bag-list-item border-1px">
+                    <span>100001</span>
+                    <span>银卡</span>
+                    <span>余额 : 1000</span>
+                </div>
+            </div>
+        </section>
+        <footer class="bottom-fixed">
+            <div class="bottom-nav-bar-btn">
+                绑定新卡
+            </div>
+        </footer>
+    </body>
+    <script>
+        var btn = document.querySelector('.bottom-nav-bar-btn')
+        btn.onclick = function() {
+            window.location.href = './no-card-deal.html'
+        }
+    </script>
+
+</html>

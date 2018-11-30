@@ -1,0 +1,71 @@
+body,
+html {
+    height: 100%;
+}
+
+.full-sc {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.no-card-container {
+    position: relative;
+    height: 100%;
+    background-image: url('../images/no-card-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quick-code-container {
+    position: absolute;
+    top: 13.55%;
+    left: 50%;
+    margin-left: -1.735rem;
+    width: 3.47rem;
+    height: 6.1rem;
+    background-image: url('../images/quickMark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.phone-cir {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 50%;
+    margin-left: -0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.mark-num {
+    position: absolute;
+    top: 3.84rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.24rem;
+    color: #4d4d4d;
+}
+
+.mark-num span:nth-child(1) {
+    margin-bottom: 0.32rem;
+}
+
+.no-card-detail {
+    position: absolute;
+    top: 8.27rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    height: 1rem;
+    background-color: #fd7700;
+}

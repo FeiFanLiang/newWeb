@@ -1,0 +1,167 @@
+.shop-content,
+.bar-left {
+    color: #191919;
+    font-weight: 500;
+}
+
+.shop-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.95rem;
+    font-size: 13px;
+    color: #0e0e0e;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.current-accu {
+    margin-left: 0.4rem;
+}
+
+.current-num {
+    color: #ef3535;
+}
+
+.com-container {
+    box-sizing: border-box;
+    height: 6.05rem;
+    padding: 0.13rem 0;
+    background-color: #eee;
+}
+
+.com-img {
+    display: flex;
+    align-items: center;
+    height: 4.4rem;
+    background-image: url('../images/shop-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-left: 29.5%; */
+}
+
+.com-detail {
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    height: 1rem;
+    margin-left: 29.5%;
+    width: 60%;
+    color: #e00f2e;
+}
+
+.com-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.55rem;
+}
+
+.com-curr {
+    font-size: 0.43rem;
+}
+
+.price-num {
+    font-size: 0.78rem;
+}
+
+.com-name {
+    font-size: 0.4rem;
+    font-weight: 500;
+}
+
+.com-remark {
+    font-size: 0.2rem;
+}
+
+.buy-title {
+    font-size: 0.28rem;
+}
+
+.com-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.4rem;
+    font-weight: 500;
+    padding: 0 0.35rem;
+    background-color: #fff;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.buy-detail {
+    margin-top: 0.29rem;
+    color: #888;
+    font-size: 0.24rem;
+}
+
+.buy-rule,
+.confirm-price {
+    color: #e00f2e;
+}
+
+.buy-right {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 1.46rem;
+    font-size: 0.24rem;
+}
+
+.buy-count-btn {
+    display: flex;
+    margin-left: 3px;
+}
+
+.buy-count {
+    padding: 0 3px;
+}
+
+.text-detail {
+    font-size: 0.24rem;
+    padding: 0 .26rem;
+}
+
+.text-title {
+    display: flex;
+    height: 0.81rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0.09rem;
+}
+
+.text-des {
+    padding: 0.31rem 0.09rem;
+}
+
+.bottom-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.bottom-nav-bar {
+    display: flex;
+    height: 0.7rem;
+    border-top: 1px solid #d6d6d6;
+    font-size: 0.24rem;
+}
+
+.bar-left,
+.bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.bar-left {
+    width: 58.75%;
+    padding-left: 0.3rem;
+    justify-content: flex-start;
+}
+
+.bar-right {
+    width: 41.25%;
+    justify-content: center;
+    color: #fff;
+    background-color: #ff3832;
+}
